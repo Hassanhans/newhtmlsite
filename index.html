@@ -7,12 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="topnav">
-        <h1>Hans Promotions</h1>
+</head>
+<body>
+    <div class="nav">
+      <div class="header">
+        <h1>HANS Promotions</h1>
+      <nav class="topnav">
         <a class="active" href="/home">Home</a>
         <a href="/services">services</a>
-        <a href="/contact">Contact</a>
+        <a href="https://www.facebook.com/hassan.hans.5454">Contact</a>
+        
     </nav>
+	
+	</div>
          <p>HANS Promotions is a social media management company .We create and manage top-performing social media campaigns for business. Our company manages social media networks such as  <strong>Facebook,Linkedin,Pinterest, Instagram and yellow pages </strong>on your behalf. We help businesses of all sizes with social media. We use the most relevant social media marketing strategies to help businesses grow and meet goals.</p>
          <p>Web design and development services are used by brands who are in need of a facelift. We design beautiful websites at affordable rates. Not only do the websites we develop look absolutely amazing, but we design them with your marketing goals in mind<br> High performing websites are focused on user experience, responsiveness across all devices, and clear call-to-actions to funnel traffic to your contact form or product page. We do this, and more.</p>
          <img src="images/pic2.png" alt="pic">
@@ -60,9 +67,36 @@
                 <td>Obi</td>
                 <td>28</td>
               </tr>
-            </table>    
+            </table> 
+            <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>   
             <footer>
-               &copy; <em id="date"></em> Created by HassanInc, All rights Reserved 2021
+               Copyright &copy; <em id="date"></em> Created by HassanInc, All rights Reserved 2021
             </footer>               
 </body>
 </html>
